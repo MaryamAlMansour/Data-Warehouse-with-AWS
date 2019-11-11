@@ -16,7 +16,7 @@ The whole logic is layed in **sql_queries.py**
 It will start by reading your 'cwh.cpg' to use them once we copy the staging table from s3 to redshift. Creating the table will create each table if it doesn't exist. Once all the tables get created, we will transfer the data from s3 to the staging table using the IAM ROLE and then insert the data, and this will be all done by running create_table.py. 
 
 Moving to Developing the pipeline
-This will be done by **running ETL.PY**
+This will be done by running ** etl.PY**
 Will connect redshift using 'dwh.cfg' creds, execute load staging tables function, and insert table function.
 After rnuuning it you should see something like this to know it ran successfully. 
 
@@ -28,5 +28,5 @@ ETL Ended
 ```
 
 ## Commands to Run AWS Sparkify
-1. <code> python3 create_tables.py </code> : To Create the database
+1. <code> python3 create_tables.py </code> : Create the database
 2. <code> python3 etl.py </code> : Run ETL Pipeline and load data to Redshift
