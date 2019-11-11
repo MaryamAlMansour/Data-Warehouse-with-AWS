@@ -29,4 +29,4 @@ ETL Ended
 
 ## Commands to Run AWS Sparkify
 <code> python3 create_tables.py </code> : To Create the database
-<code> python3 etl.py </code> : Run ETL Pipeline and produce the 
+<code> python3 etl.py </code> : Run ETL Pipeline and load data to Redshift
